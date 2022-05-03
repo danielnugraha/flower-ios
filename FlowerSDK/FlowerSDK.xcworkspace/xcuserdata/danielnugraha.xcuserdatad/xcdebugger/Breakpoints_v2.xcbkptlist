@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D0E7285F-861C-42CE-B205-C9E07A0AA69A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "949028F9-6F20-45A9-B356-594AF84B8DBF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlowerSDK/TorchBridge/TorchModule.mm"
+            startingColumnNumber = "10"
+            endingColumnNumber = "10"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-train:datasetPath:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
