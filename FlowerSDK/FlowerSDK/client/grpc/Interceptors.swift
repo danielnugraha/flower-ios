@@ -22,7 +22,7 @@ class FlowerClientInterceptors: ClientInterceptor<Flower_Transport_ClientMessage
             // one message. For server-streaming and bidirectional-streaming we expect any number of
             // messages (including zero).
             case let .message(response):
-            print("< Received response with text '\(String(describing: response.msg))'")
+            print("< Received response with text '\(String(describing: response.msg).count)'")
 
             // The end of the response stream (and by extension, request stream). We expect one 'end' part,
             // after which no more response parts may be received and no more request parts will be sent.

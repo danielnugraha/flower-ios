@@ -16,8 +16,7 @@ class ParameterConverter {
     var io: PythonObject
     var typing: PythonObject
     
-    private static let appDirectory = FileManager.default.urls(for: .applicationSupportDirectory,
-                                                               in: .userDomainMask).first!
+    private static let appDirectory = try! FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     /// The permanent location of the numpyArray.
     private var numpyArrayUrl = appDirectory.appendingPathComponent("numpyArray.npy")
     
@@ -46,7 +45,7 @@ class ParameterConverter {
         if fileManager.fileExists(atPath: numpyArrayUrl.path) {
             try? fileManager.removeItem(at: numpyArrayUrl)
         }
-        
+        print(numpyArrayUrl.path)
         np.save(numpyArrayUrl.path, numpy)
         return try? Data(contentsOf: numpyArrayUrl)
     }

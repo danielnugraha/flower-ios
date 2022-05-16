@@ -23,15 +23,19 @@ func startClient(serverHost: String, serverPort: Int, client: Client) {
     //
     // See: https://github.com/apple/swift-nio#eventloops-and-eventloopgroups
     let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+    let transport = PlatformSupport.makeEventLoopGroup(loopCount: 1, networkPreference: .best)
+
 
     // Make sure the group is shutdown when we're done with it.
-    defer {
+    /*defer {
         try! group.syncShutdownGracefully()
-    }
+    }*/
     
     let keepalive = ClientConnectionKeepalive(
-      interval: .seconds(100),
-      timeout: .seconds(99)
+      interval: .seconds(10),
+      timeout: .seconds(5),
+      permitWithoutCalls: true,
+      maximumPingsWithoutData: 0
     )
 
 
@@ -39,14 +43,18 @@ func startClient(serverHost: String, serverPort: Int, client: Client) {
     let channel = try! GRPCChannelPool.with(
         target: .host(serverHost, port: serverPort),
         transportSecurity: .plaintext,
-        eventLoopGroup: group
-    )
+        eventLoopGroup: transport
+    ) {
+        // Configure keepalive.
+        $0.keepalive = keepalive
+        $0.maximumReceiveMessageLength = 536870912
+    }
 
     // Close the connection when we're done with it.
-    defer {
+   /* defer {
         print("closing")
         try! channel.close().wait()
-    }
+    }*/
     
     let grpcClient = Flower_Transport_FlowerServiceClient(channel: channel, interceptors: FlowerInterceptorsFactory())
     var callOptions = CallOptions()
@@ -58,6 +66,8 @@ func startClient(serverHost: String, serverPort: Int, client: Client) {
         serverMessage = sm
     })
     
+    
+    
     /*messagePublisher
         .sink(receiveValue: { serverMessage in
             print(serverMessage)
@@ -65,20 +75,23 @@ func startClient(serverHost: String, serverPort: Int, client: Client) {
             if let msg = serverMessage {
                 print("msg not null")
                
-                    let receive = try! handle(client: client, serverMsg: msg)
-                    bidirectional.sendMessage(receive.0)
-                    sleepDuration = receive.1
-                    if !receive.2 {
-                        try! channel.close().wait()
-                    }
+                let receive = try! handle(client: client, serverMsg: msg)
+                let response = bidirectional.sendMessage(receive.0)
+                print(response)
+                sleepDuration = receive.1
+                if !receive.2 {
+                    try! channel.close().wait()
                 }
+            }
             
         })
         .store(in: &cancellables)*/
     
     print(bidirectional.eventLoop)
+
     while true {
         if let msg = serverMessage {
+            print(Thread.printCurrent())
             print("msg not null")
             let receive = try! handle(client: client, serverMsg: msg)
             print("sending msg")
@@ -86,15 +99,11 @@ func startClient(serverHost: String, serverPort: Int, client: Client) {
             print(result)
             sleepDuration = receive.1
             print(receive.2)
-            if !receive.2 {
-                print("closing")
-                try! channel.close().wait()
-            }
             serverMessage = nil
             print(serverMessage)
-            channel.
         }
     }
+    try! bidirectional.status.wait()
     //print(status.code)
 }
 
@@ -112,3 +121,10 @@ private func handleServerMessage(
     try? closed.wait()
 }
 */
+
+
+extension Thread {
+    class func printCurrent() {
+        print("\r⚡️: \(Thread.current)\r" + "🏭: \(OperationQueue.current?.underlyingQueue?.label ?? "None")\r")
+    }
+}

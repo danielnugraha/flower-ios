@@ -73,8 +73,9 @@ class CoreMLClient: Client {
         }
         
         for (index, data) in parameters.tensors.enumerated() {
-            let expectedNumberOfElements = layerWrappers[index].shape.reduce(1, *)
-            
+            print(layerWrappers[index].shape)
+            let expectedNumberOfElements = layerWrappers[index].shape.map({Int($0)}).reduce(1, *)
+            print(expectedNumberOfElements)
             if let weightsArray = parameterConverter.dataToArray(data: data) {
                 guard weightsArray.count == expectedNumberOfElements else {
                     print("array received has wrong number of elements")
