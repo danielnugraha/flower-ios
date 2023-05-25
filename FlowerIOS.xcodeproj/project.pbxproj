@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21A30DC72A1E23AE00BEBAD6 /* FlowerIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DC62A1E23AE00BEBAD6 /* FlowerIOSApp.swift */; };
+		21A30DC92A1E23AE00BEBAD6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DC82A1E23AE00BEBAD6 /* MainView.swift */; };
+		21A30DCB2A1E23AE00BEBAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A30DCA2A1E23AE00BEBAD6 /* Assets.xcassets */; };
+		21A30DCE2A1E23AE00BEBAD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A30DCD2A1E23AE00BEBAD6 /* Preview Assets.xcassets */; };
+		21A30DD92A1E23E100BEBAD6 /* MLModelInspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DD62A1E23E100BEBAD6 /* MLModelInspect.swift */; };
+		21A30DDA2A1E23E100BEBAD6 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DD72A1E23E100BEBAD6 /* DataLoader.swift */; };
+		21A30E352A1E240C00BEBAD6 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DDC2A1E240B00BEBAD6 /* Array+Extensions.swift */; };
+		21A30E362A1E240C00BEBAD6 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DDD2A1E240B00BEBAD6 /* Math.swift */; };
+		21A30E372A1E240C00BEBAD6 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DDE2A1E240B00BEBAD6 /* UIImage+CVPixelBuffer.swift */; };
+		21A30E382A1E240C00BEBAD6 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DDF2A1E240B00BEBAD6 /* Predictions.swift */; };
+		21A30E392A1E240C00BEBAD6 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE02A1E240B00BEBAD6 /* UIImage+Extensions.swift */; };
+		21A30E3A2A1E240C00BEBAD6 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE12A1E240B00BEBAD6 /* CGImagePropertyOrientation.swift */; };
+		21A30E3B2A1E240C00BEBAD6 /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE22A1E240B00BEBAD6 /* UIImage+RawBytes.swift */; };
+		21A30E3C2A1E240C00BEBAD6 /* MLMultiArray+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE32A1E240B00BEBAD6 /* MLMultiArray+Helpers.swift */; };
+		21A30E3D2A1E240C00BEBAD6 /* MLModel+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE42A1E240B00BEBAD6 /* MLModel+Images.swift */; };
+		21A30E3E2A1E240C00BEBAD6 /* CoreML+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE52A1E240B00BEBAD6 /* CoreML+Combine.swift */; };
+		21A30E3F2A1E240C00BEBAD6 /* CVPixelBuffer+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE62A1E240B00BEBAD6 /* CVPixelBuffer+Create.swift */; };
+		21A30E402A1E240C00BEBAD6 /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE72A1E240B00BEBAD6 /* CGImage+CVPixelBuffer.swift */; };
+		21A30E412A1E240C00BEBAD6 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE82A1E240B00BEBAD6 /* NonMaxSuppression.swift */; };
+		21A30E422A1E240C00BEBAD6 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DE92A1E240B00BEBAD6 /* CGImage+RawBytes.swift */; };
+		21A30E432A1E240C00BEBAD6 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DEA2A1E240B00BEBAD6 /* MLMultiArray+Image.swift */; };
+		21A30E442A1E240C00BEBAD6 /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DEB2A1E240B00BEBAD6 /* CVPixelBuffer+Resize.swift */; };
+		21A30E452A1E240C00BEBAD6 /* CVPixelBuffer+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DEC2A1E240B00BEBAD6 /* CVPixelBuffer+Rotate.swift */; };
+		21A30E462A1E240C00BEBAD6 /* WordTagger.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DEE2A1E240B00BEBAD6 /* WordTagger.pb.swift */; };
+		21A30E482A1E240C00BEBAD6 /* FeatureTypes.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DF02A1E240B00BEBAD6 /* FeatureTypes.pb.swift */; };
+		21A30E4A2A1E240C00BEBAD6 /* Normalizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DF22A1E240B00BEBAD6 /* Normalizer.pb.swift */; };
+		21A30E4D2A1E240C00BEBAD6 /* SoundAnalysisPreprocessing.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DF52A1E240B00BEBAD6 /* SoundAnalysisPreprocessing.pb.swift */; };
+		21A30E512A1E240C00BEBAD6 /* MIL.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DF92A1E240B00BEBAD6 /* MIL.pb.swift */; };
+		21A30E532A1E240C00BEBAD6 /* Gazetteer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DFB2A1E240B00BEBAD6 /* Gazetteer.pb.swift */; };
+		21A30E542A1E240C00BEBAD6 /* VisionFeaturePrint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DFC2A1E240B00BEBAD6 /* VisionFeaturePrint.pb.swift */; };
+		21A30E572A1E240C00BEBAD6 /* GLMRegressor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30DFF2A1E240B00BEBAD6 /* GLMRegressor.pb.swift */; };
+		21A30E582A1E240C00BEBAD6 /* NearestNeighbors.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E002A1E240B00BEBAD6 /* NearestNeighbors.pb.swift */; };
+		21A30E5A2A1E240C00BEBAD6 /* FeatureVectorizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E022A1E240B00BEBAD6 /* FeatureVectorizer.pb.swift */; };
+		21A30E5B2A1E240C00BEBAD6 /* OneHotEncoder.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E032A1E240B00BEBAD6 /* OneHotEncoder.pb.swift */; };
+		21A30E5D2A1E240C00BEBAD6 /* NonMaximumSuppression.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E052A1E240B00BEBAD6 /* NonMaximumSuppression.pb.swift */; };
+		21A30E5E2A1E240C00BEBAD6 /* SVM.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E062A1E240B00BEBAD6 /* SVM.pb.swift */; };
+		21A30E602A1E240C00BEBAD6 /* AudioFeaturePrint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E082A1E240B00BEBAD6 /* AudioFeaturePrint.pb.swift */; };
+		21A30E612A1E240C00BEBAD6 /* Imputer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E092A1E240B00BEBAD6 /* Imputer.pb.swift */; };
+		21A30E632A1E240C00BEBAD6 /* Identity.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E0B2A1E240B00BEBAD6 /* Identity.pb.swift */; };
+		21A30E652A1E240C00BEBAD6 /* LinkedModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E0D2A1E240B00BEBAD6 /* LinkedModel.pb.swift */; };
+		21A30E682A1E240C00BEBAD6 /* GLMClassifier.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E102A1E240B00BEBAD6 /* GLMClassifier.pb.swift */; };
+		21A30E692A1E240C00BEBAD6 /* ItemSimilarityRecommender.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E112A1E240B00BEBAD6 /* ItemSimilarityRecommender.pb.swift */; };
+		21A30E6A2A1E240C00BEBAD6 /* TreeEnsemble.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E122A1E240B00BEBAD6 /* TreeEnsemble.pb.swift */; };
+		21A30E6D2A1E240C00BEBAD6 /* TextClassifier.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E152A1E240B00BEBAD6 /* TextClassifier.pb.swift */; };
+		21A30E6E2A1E240C00BEBAD6 /* ArrayFeatureExtractor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E162A1E240B00BEBAD6 /* ArrayFeatureExtractor.pb.swift */; };
+		21A30E742A1E240C00BEBAD6 /* BayesianProbitRegressor.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E1C2A1E240B00BEBAD6 /* BayesianProbitRegressor.pb.swift */; };
+		21A30E772A1E240C00BEBAD6 /* CustomModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E1F2A1E240B00BEBAD6 /* CustomModel.pb.swift */; };
+		21A30E782A1E240C00BEBAD6 /* DictVectorizer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E202A1E240B00BEBAD6 /* DictVectorizer.pb.swift */; };
+		21A30E792A1E240C00BEBAD6 /* CategoricalMapping.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E212A1E240B00BEBAD6 /* CategoricalMapping.pb.swift */; };
+		21A30E7B2A1E240C00BEBAD6 /* Parameters.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E232A1E240B00BEBAD6 /* Parameters.pb.swift */; };
+		21A30E7D2A1E240C00BEBAD6 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 21A30E252A1E240B00BEBAD6 /* README.rst */; };
+		21A30E7E2A1E240C00BEBAD6 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21A30E262A1E240B00BEBAD6 /* LICENSE.txt */; };
+		21A30E7F2A1E240C00BEBAD6 /* WordEmbedding.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E272A1E240B00BEBAD6 /* WordEmbedding.pb.swift */; };
+		21A30E842A1E240C00BEBAD6 /* DataStructures.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E2C2A1E240B00BEBAD6 /* DataStructures.pb.swift */; };
+		21A30E852A1E240C00BEBAD6 /* Model.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E2D2A1E240B00BEBAD6 /* Model.pb.swift */; };
+		21A30E862A1E240C00BEBAD6 /* NeuralNetwork.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E2E2A1E240B00BEBAD6 /* NeuralNetwork.pb.swift */; };
+		21A30E872A1E240C00BEBAD6 /* Scaler.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E2F2A1E240B00BEBAD6 /* Scaler.pb.swift */; };
+		21A30E882A1E240C00BEBAD6 /* MNIST_train.csv.lzfse in Resources */ = {isa = PBXBuildFile; fileRef = 21A30E322A1E240C00BEBAD6 /* MNIST_train.csv.lzfse */; };
+		21A30E892A1E240C00BEBAD6 /* MNIST_test.csv.lzfse in Resources */ = {isa = PBXBuildFile; fileRef = 21A30E332A1E240C00BEBAD6 /* MNIST_test.csv.lzfse */; };
+		21A30E8E2A1E24EF00BEBAD6 /* flwr in Frameworks */ = {isa = PBXBuildFile; productRef = 21A30E8D2A1E24EF00BEBAD6 /* flwr */; };
+		21A30E922A1E2A2C00BEBAD6 /* MNIST_Model.mlmodel in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21A30E342A1E240C00BEBAD6 /* MNIST_Model.mlmodel */; };
+		21A30E942A1E2F3C00BEBAD6 /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A30E932A1E2F3C00BEBAD6 /* AppLogic.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21A30E8F2A1E2A1C00BEBAD6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				21A30E922A1E2A2C00BEBAD6 /* MNIST_Model.mlmodel in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21A30DC32A1E23AE00BEBAD6 /* FlowerIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A30DC62A1E23AE00BEBAD6 /* FlowerIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerIOSApp.swift; sourceTree = "<group>"; };
+		21A30DC82A1E23AE00BEBAD6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		21A30DCA2A1E23AE00BEBAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21A30DCD2A1E23AE00BEBAD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21A30DD62A1E23E100BEBAD6 /* MLModelInspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLModelInspect.swift; sourceTree = "<group>"; };
+		21A30DD72A1E23E100BEBAD6 /* DataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		21A30DDC2A1E240B00BEBAD6 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		21A30DDD2A1E240B00BEBAD6 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		21A30DDE2A1E240B00BEBAD6 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		21A30DDF2A1E240B00BEBAD6 /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		21A30DE02A1E240B00BEBAD6 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		21A30DE12A1E240B00BEBAD6 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		21A30DE22A1E240B00BEBAD6 /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		21A30DE32A1E240B00BEBAD6 /* MLMultiArray+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Helpers.swift"; sourceTree = "<group>"; };
+		21A30DE42A1E240B00BEBAD6 /* MLModel+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLModel+Images.swift"; sourceTree = "<group>"; };
+		21A30DE52A1E240B00BEBAD6 /* CoreML+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreML+Combine.swift"; sourceTree = "<group>"; };
+		21A30DE62A1E240B00BEBAD6 /* CVPixelBuffer+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Create.swift"; sourceTree = "<group>"; };
+		21A30DE72A1E240B00BEBAD6 /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		21A30DE82A1E240B00BEBAD6 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		21A30DE92A1E240B00BEBAD6 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		21A30DEA2A1E240B00BEBAD6 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		21A30DEB2A1E240B00BEBAD6 /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
+		21A30DEC2A1E240B00BEBAD6 /* CVPixelBuffer+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Rotate.swift"; sourceTree = "<group>"; };
+		21A30DEE2A1E240B00BEBAD6 /* WordTagger.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTagger.pb.swift; sourceTree = "<group>"; };
+		21A30DEF2A1E240B00BEBAD6 /* Imputer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Imputer.proto; sourceTree = "<group>"; };
+		21A30DF02A1E240B00BEBAD6 /* FeatureTypes.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureTypes.pb.swift; sourceTree = "<group>"; };
+		21A30DF12A1E240B00BEBAD6 /* NeuralNetwork.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = NeuralNetwork.proto; sourceTree = "<group>"; };
+		21A30DF22A1E240B00BEBAD6 /* Normalizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normalizer.pb.swift; sourceTree = "<group>"; };
+		21A30DF32A1E240B00BEBAD6 /* FeatureVectorizer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = FeatureVectorizer.proto; sourceTree = "<group>"; };
+		21A30DF42A1E240B00BEBAD6 /* AudioFeaturePrint.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = AudioFeaturePrint.proto; sourceTree = "<group>"; };
+		21A30DF52A1E240B00BEBAD6 /* SoundAnalysisPreprocessing.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAnalysisPreprocessing.pb.swift; sourceTree = "<group>"; };
+		21A30DF62A1E240B00BEBAD6 /* BayesianProbitRegressor.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = BayesianProbitRegressor.proto; sourceTree = "<group>"; };
+		21A30DF72A1E240B00BEBAD6 /* WordEmbedding.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = WordEmbedding.proto; sourceTree = "<group>"; };
+		21A30DF82A1E240B00BEBAD6 /* Gazetteer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Gazetteer.proto; sourceTree = "<group>"; };
+		21A30DF92A1E240B00BEBAD6 /* MIL.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIL.pb.swift; sourceTree = "<group>"; };
+		21A30DFA2A1E240B00BEBAD6 /* TreeEnsemble.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = TreeEnsemble.proto; sourceTree = "<group>"; };
+		21A30DFB2A1E240B00BEBAD6 /* Gazetteer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gazetteer.pb.swift; sourceTree = "<group>"; };
+		21A30DFC2A1E240B00BEBAD6 /* VisionFeaturePrint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionFeaturePrint.pb.swift; sourceTree = "<group>"; };
+		21A30DFD2A1E240B00BEBAD6 /* Scaler.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Scaler.proto; sourceTree = "<group>"; };
+		21A30DFE2A1E240B00BEBAD6 /* ArrayFeatureExtractor.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = ArrayFeatureExtractor.proto; sourceTree = "<group>"; };
+		21A30DFF2A1E240B00BEBAD6 /* GLMRegressor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLMRegressor.pb.swift; sourceTree = "<group>"; };
+		21A30E002A1E240B00BEBAD6 /* NearestNeighbors.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearestNeighbors.pb.swift; sourceTree = "<group>"; };
+		21A30E012A1E240B00BEBAD6 /* MIL.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = MIL.proto; sourceTree = "<group>"; };
+		21A30E022A1E240B00BEBAD6 /* FeatureVectorizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureVectorizer.pb.swift; sourceTree = "<group>"; };
+		21A30E032A1E240B00BEBAD6 /* OneHotEncoder.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneHotEncoder.pb.swift; sourceTree = "<group>"; };
+		21A30E042A1E240B00BEBAD6 /* CustomModel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = CustomModel.proto; sourceTree = "<group>"; };
+		21A30E052A1E240B00BEBAD6 /* NonMaximumSuppression.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaximumSuppression.pb.swift; sourceTree = "<group>"; };
+		21A30E062A1E240B00BEBAD6 /* SVM.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVM.pb.swift; sourceTree = "<group>"; };
+		21A30E072A1E240B00BEBAD6 /* Normalizer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Normalizer.proto; sourceTree = "<group>"; };
+		21A30E082A1E240B00BEBAD6 /* AudioFeaturePrint.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFeaturePrint.pb.swift; sourceTree = "<group>"; };
+		21A30E092A1E240B00BEBAD6 /* Imputer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imputer.pb.swift; sourceTree = "<group>"; };
+		21A30E0A2A1E240B00BEBAD6 /* NonMaximumSuppression.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = NonMaximumSuppression.proto; sourceTree = "<group>"; };
+		21A30E0B2A1E240B00BEBAD6 /* Identity.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.pb.swift; sourceTree = "<group>"; };
+		21A30E0C2A1E240B00BEBAD6 /* OneHotEncoder.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = OneHotEncoder.proto; sourceTree = "<group>"; };
+		21A30E0D2A1E240B00BEBAD6 /* LinkedModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedModel.pb.swift; sourceTree = "<group>"; };
+		21A30E0E2A1E240B00BEBAD6 /* DictVectorizer.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = DictVectorizer.proto; sourceTree = "<group>"; };
+		21A30E0F2A1E240B00BEBAD6 /* DataStructures.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = DataStructures.proto; sourceTree = "<group>"; };
+		21A30E102A1E240B00BEBAD6 /* GLMClassifier.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLMClassifier.pb.swift; sourceTree = "<group>"; };
+		21A30E112A1E240B00BEBAD6 /* ItemSimilarityRecommender.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSimilarityRecommender.pb.swift; sourceTree = "<group>"; };
+		21A30E122A1E240B00BEBAD6 /* TreeEnsemble.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeEnsemble.pb.swift; sourceTree = "<group>"; };
+		21A30E132A1E240B00BEBAD6 /* FeatureTypes.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = FeatureTypes.proto; sourceTree = "<group>"; };
+		21A30E142A1E240B00BEBAD6 /* GLMRegressor.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = GLMRegressor.proto; sourceTree = "<group>"; };
+		21A30E152A1E240B00BEBAD6 /* TextClassifier.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextClassifier.pb.swift; sourceTree = "<group>"; };
+		21A30E162A1E240B00BEBAD6 /* ArrayFeatureExtractor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFeatureExtractor.pb.swift; sourceTree = "<group>"; };
+		21A30E172A1E240B00BEBAD6 /* SVM.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = SVM.proto; sourceTree = "<group>"; };
+		21A30E182A1E240B00BEBAD6 /* Parameters.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Parameters.proto; sourceTree = "<group>"; };
+		21A30E192A1E240B00BEBAD6 /* VisionFeaturePrint.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = VisionFeaturePrint.proto; sourceTree = "<group>"; };
+		21A30E1A2A1E240B00BEBAD6 /* Model.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Model.proto; sourceTree = "<group>"; };
+		21A30E1B2A1E240B00BEBAD6 /* TextClassifier.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = TextClassifier.proto; sourceTree = "<group>"; };
+		21A30E1C2A1E240B00BEBAD6 /* BayesianProbitRegressor.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BayesianProbitRegressor.pb.swift; sourceTree = "<group>"; };
+		21A30E1D2A1E240B00BEBAD6 /* ItemSimilarityRecommender.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = ItemSimilarityRecommender.proto; sourceTree = "<group>"; };
+		21A30E1E2A1E240B00BEBAD6 /* Identity.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = Identity.proto; sourceTree = "<group>"; };
+		21A30E1F2A1E240B00BEBAD6 /* CustomModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomModel.pb.swift; sourceTree = "<group>"; };
+		21A30E202A1E240B00BEBAD6 /* DictVectorizer.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictVectorizer.pb.swift; sourceTree = "<group>"; };
+		21A30E212A1E240B00BEBAD6 /* CategoricalMapping.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoricalMapping.pb.swift; sourceTree = "<group>"; };
+		21A30E222A1E240B00BEBAD6 /* SoundAnalysisPreprocessing.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = SoundAnalysisPreprocessing.proto; sourceTree = "<group>"; };
+		21A30E232A1E240B00BEBAD6 /* Parameters.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.pb.swift; sourceTree = "<group>"; };
+		21A30E242A1E240B00BEBAD6 /* CategoricalMapping.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = CategoricalMapping.proto; sourceTree = "<group>"; };
+		21A30E252A1E240B00BEBAD6 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
+		21A30E262A1E240B00BEBAD6 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		21A30E272A1E240B00BEBAD6 /* WordEmbedding.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEmbedding.pb.swift; sourceTree = "<group>"; };
+		21A30E282A1E240B00BEBAD6 /* NearestNeighbors.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = NearestNeighbors.proto; sourceTree = "<group>"; };
+		21A30E292A1E240B00BEBAD6 /* LinkedModel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = LinkedModel.proto; sourceTree = "<group>"; };
+		21A30E2A2A1E240B00BEBAD6 /* WordTagger.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = WordTagger.proto; sourceTree = "<group>"; };
+		21A30E2B2A1E240B00BEBAD6 /* GLMClassifier.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = GLMClassifier.proto; sourceTree = "<group>"; };
+		21A30E2C2A1E240B00BEBAD6 /* DataStructures.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStructures.pb.swift; sourceTree = "<group>"; };
+		21A30E2D2A1E240B00BEBAD6 /* Model.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.pb.swift; sourceTree = "<group>"; };
+		21A30E2E2A1E240B00BEBAD6 /* NeuralNetwork.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuralNetwork.pb.swift; sourceTree = "<group>"; };
+		21A30E2F2A1E240B00BEBAD6 /* Scaler.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scaler.pb.swift; sourceTree = "<group>"; };
+		21A30E322A1E240C00BEBAD6 /* MNIST_train.csv.lzfse */ = {isa = PBXFileReference; lastKnownFileType = file; path = MNIST_train.csv.lzfse; sourceTree = "<group>"; };
+		21A30E332A1E240C00BEBAD6 /* MNIST_test.csv.lzfse */ = {isa = PBXFileReference; lastKnownFileType = file; path = MNIST_test.csv.lzfse; sourceTree = "<group>"; };
+		21A30E342A1E240C00BEBAD6 /* MNIST_Model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MNIST_Model.mlmodel; sourceTree = "<group>"; };
+		21A30E932A1E2F3C00BEBAD6 /* AppLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21A30DC02A1E23AE00BEBAD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A30E8E2A1E24EF00BEBAD6 /* flwr in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21A30DBA2A1E23AE00BEBAD6 = {
+			isa = PBXGroup;
+			children = (
+				21A30DC52A1E23AE00BEBAD6 /* FlowerIOS */,
+				21A30DC42A1E23AE00BEBAD6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21A30DC42A1E23AE00BEBAD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DC32A1E23AE00BEBAD6 /* FlowerIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21A30DC52A1E23AE00BEBAD6 /* FlowerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				21A30E8B2A1E241300BEBAD6 /* Utils */,
+				21A30DC62A1E23AE00BEBAD6 /* FlowerIOSApp.swift */,
+				21A30DC82A1E23AE00BEBAD6 /* MainView.swift */,
+				21A30E932A1E2F3C00BEBAD6 /* AppLogic.swift */,
+				21A30DCA2A1E23AE00BEBAD6 /* Assets.xcassets */,
+				21A30DCC2A1E23AE00BEBAD6 /* Preview Content */,
+			);
+			path = FlowerIOS;
+			sourceTree = "<group>";
+		};
+		21A30DCC2A1E23AE00BEBAD6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DCD2A1E23AE00BEBAD6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21A30DDB2A1E240B00BEBAD6 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DDC2A1E240B00BEBAD6 /* Array+Extensions.swift */,
+				21A30DDD2A1E240B00BEBAD6 /* Math.swift */,
+				21A30DDE2A1E240B00BEBAD6 /* UIImage+CVPixelBuffer.swift */,
+				21A30DDF2A1E240B00BEBAD6 /* Predictions.swift */,
+				21A30DE02A1E240B00BEBAD6 /* UIImage+Extensions.swift */,
+				21A30DE12A1E240B00BEBAD6 /* CGImagePropertyOrientation.swift */,
+				21A30DE22A1E240B00BEBAD6 /* UIImage+RawBytes.swift */,
+				21A30DE32A1E240B00BEBAD6 /* MLMultiArray+Helpers.swift */,
+				21A30DE42A1E240B00BEBAD6 /* MLModel+Images.swift */,
+				21A30DE52A1E240B00BEBAD6 /* CoreML+Combine.swift */,
+				21A30DE62A1E240B00BEBAD6 /* CVPixelBuffer+Create.swift */,
+				21A30DE72A1E240B00BEBAD6 /* CGImage+CVPixelBuffer.swift */,
+				21A30DE82A1E240B00BEBAD6 /* NonMaxSuppression.swift */,
+				21A30DE92A1E240B00BEBAD6 /* CGImage+RawBytes.swift */,
+				21A30DEA2A1E240B00BEBAD6 /* MLMultiArray+Image.swift */,
+				21A30DEB2A1E240B00BEBAD6 /* CVPixelBuffer+Resize.swift */,
+				21A30DEC2A1E240B00BEBAD6 /* CVPixelBuffer+Rotate.swift */,
+				21A30DD62A1E23E100BEBAD6 /* MLModelInspect.swift */,
+			);
+			path = CoreMLHelpers;
+			sourceTree = "<group>";
+		};
+		21A30DED2A1E240B00BEBAD6 /* CoreMLProto */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DEE2A1E240B00BEBAD6 /* WordTagger.pb.swift */,
+				21A30DEF2A1E240B00BEBAD6 /* Imputer.proto */,
+				21A30DF02A1E240B00BEBAD6 /* FeatureTypes.pb.swift */,
+				21A30DF12A1E240B00BEBAD6 /* NeuralNetwork.proto */,
+				21A30DF22A1E240B00BEBAD6 /* Normalizer.pb.swift */,
+				21A30DF32A1E240B00BEBAD6 /* FeatureVectorizer.proto */,
+				21A30DF42A1E240B00BEBAD6 /* AudioFeaturePrint.proto */,
+				21A30DF52A1E240B00BEBAD6 /* SoundAnalysisPreprocessing.pb.swift */,
+				21A30DF62A1E240B00BEBAD6 /* BayesianProbitRegressor.proto */,
+				21A30DF72A1E240B00BEBAD6 /* WordEmbedding.proto */,
+				21A30DF82A1E240B00BEBAD6 /* Gazetteer.proto */,
+				21A30DF92A1E240B00BEBAD6 /* MIL.pb.swift */,
+				21A30DFA2A1E240B00BEBAD6 /* TreeEnsemble.proto */,
+				21A30DFB2A1E240B00BEBAD6 /* Gazetteer.pb.swift */,
+				21A30DFC2A1E240B00BEBAD6 /* VisionFeaturePrint.pb.swift */,
+				21A30DFD2A1E240B00BEBAD6 /* Scaler.proto */,
+				21A30DFE2A1E240B00BEBAD6 /* ArrayFeatureExtractor.proto */,
+				21A30DFF2A1E240B00BEBAD6 /* GLMRegressor.pb.swift */,
+				21A30E002A1E240B00BEBAD6 /* NearestNeighbors.pb.swift */,
+				21A30E012A1E240B00BEBAD6 /* MIL.proto */,
+				21A30E022A1E240B00BEBAD6 /* FeatureVectorizer.pb.swift */,
+				21A30E032A1E240B00BEBAD6 /* OneHotEncoder.pb.swift */,
+				21A30E042A1E240B00BEBAD6 /* CustomModel.proto */,
+				21A30E052A1E240B00BEBAD6 /* NonMaximumSuppression.pb.swift */,
+				21A30E062A1E240B00BEBAD6 /* SVM.pb.swift */,
+				21A30E072A1E240B00BEBAD6 /* Normalizer.proto */,
+				21A30E082A1E240B00BEBAD6 /* AudioFeaturePrint.pb.swift */,
+				21A30E092A1E240B00BEBAD6 /* Imputer.pb.swift */,
+				21A30E0A2A1E240B00BEBAD6 /* NonMaximumSuppression.proto */,
+				21A30E0B2A1E240B00BEBAD6 /* Identity.pb.swift */,
+				21A30E0C2A1E240B00BEBAD6 /* OneHotEncoder.proto */,
+				21A30E0D2A1E240B00BEBAD6 /* LinkedModel.pb.swift */,
+				21A30E0E2A1E240B00BEBAD6 /* DictVectorizer.proto */,
+				21A30E0F2A1E240B00BEBAD6 /* DataStructures.proto */,
+				21A30E102A1E240B00BEBAD6 /* GLMClassifier.pb.swift */,
+				21A30E112A1E240B00BEBAD6 /* ItemSimilarityRecommender.pb.swift */,
+				21A30E122A1E240B00BEBAD6 /* TreeEnsemble.pb.swift */,
+				21A30E132A1E240B00BEBAD6 /* FeatureTypes.proto */,
+				21A30E142A1E240B00BEBAD6 /* GLMRegressor.proto */,
+				21A30E152A1E240B00BEBAD6 /* TextClassifier.pb.swift */,
+				21A30E162A1E240B00BEBAD6 /* ArrayFeatureExtractor.pb.swift */,
+				21A30E172A1E240B00BEBAD6 /* SVM.proto */,
+				21A30E182A1E240B00BEBAD6 /* Parameters.proto */,
+				21A30E192A1E240B00BEBAD6 /* VisionFeaturePrint.proto */,
+				21A30E1A2A1E240B00BEBAD6 /* Model.proto */,
+				21A30E1B2A1E240B00BEBAD6 /* TextClassifier.proto */,
+				21A30E1C2A1E240B00BEBAD6 /* BayesianProbitRegressor.pb.swift */,
+				21A30E1D2A1E240B00BEBAD6 /* ItemSimilarityRecommender.proto */,
+				21A30E1E2A1E240B00BEBAD6 /* Identity.proto */,
+				21A30E1F2A1E240B00BEBAD6 /* CustomModel.pb.swift */,
+				21A30E202A1E240B00BEBAD6 /* DictVectorizer.pb.swift */,
+				21A30E212A1E240B00BEBAD6 /* CategoricalMapping.pb.swift */,
+				21A30E222A1E240B00BEBAD6 /* SoundAnalysisPreprocessing.proto */,
+				21A30E232A1E240B00BEBAD6 /* Parameters.pb.swift */,
+				21A30E242A1E240B00BEBAD6 /* CategoricalMapping.proto */,
+				21A30E252A1E240B00BEBAD6 /* README.rst */,
+				21A30E262A1E240B00BEBAD6 /* LICENSE.txt */,
+				21A30E272A1E240B00BEBAD6 /* WordEmbedding.pb.swift */,
+				21A30E282A1E240B00BEBAD6 /* NearestNeighbors.proto */,
+				21A30E292A1E240B00BEBAD6 /* LinkedModel.proto */,
+				21A30E2A2A1E240B00BEBAD6 /* WordTagger.proto */,
+				21A30E2B2A1E240B00BEBAD6 /* GLMClassifier.proto */,
+				21A30E2C2A1E240B00BEBAD6 /* DataStructures.pb.swift */,
+				21A30E2D2A1E240B00BEBAD6 /* Model.pb.swift */,
+				21A30E2E2A1E240B00BEBAD6 /* NeuralNetwork.pb.swift */,
+				21A30E2F2A1E240B00BEBAD6 /* Scaler.pb.swift */,
+			);
+			path = CoreMLProto;
+			sourceTree = "<group>";
+		};
+		21A30E312A1E240C00BEBAD6 /* MNIST */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DD72A1E23E100BEBAD6 /* DataLoader.swift */,
+				21A30E322A1E240C00BEBAD6 /* MNIST_train.csv.lzfse */,
+				21A30E332A1E240C00BEBAD6 /* MNIST_test.csv.lzfse */,
+				21A30E342A1E240C00BEBAD6 /* MNIST_Model.mlmodel */,
+			);
+			path = MNIST;
+			sourceTree = "<group>";
+		};
+		21A30E8B2A1E241300BEBAD6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21A30DDB2A1E240B00BEBAD6 /* CoreMLHelpers */,
+				21A30DED2A1E240B00BEBAD6 /* CoreMLProto */,
+				21A30E312A1E240C00BEBAD6 /* MNIST */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21A30DC22A1E23AE00BEBAD6 /* FlowerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A30DD12A1E23AE00BEBAD6 /* Build configuration list for PBXNativeTarget "FlowerIOS" */;
+			buildPhases = (
+				21A30DBF2A1E23AE00BEBAD6 /* Sources */,
+				21A30DC02A1E23AE00BEBAD6 /* Frameworks */,
+				21A30DC12A1E23AE00BEBAD6 /* Resources */,
+				21A30E8F2A1E2A1C00BEBAD6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerIOS;
+			packageProductDependencies = (
+				21A30E8D2A1E24EF00BEBAD6 /* flwr */,
+			);
+			productName = FlowerIOS;
+			productReference = 21A30DC32A1E23AE00BEBAD6 /* FlowerIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21A30DBB2A1E23AE00BEBAD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					21A30DC22A1E23AE00BEBAD6 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 21A30DBE2A1E23AE00BEBAD6 /* Build configuration list for PBXProject "FlowerIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21A30DBA2A1E23AE00BEBAD6;
+			packageReferences = (
+				21A30E8C2A1E24EF00BEBAD6 /* XCRemoteSwiftPackageReference "flower-swift" */,
+			);
+			productRefGroup = 21A30DC42A1E23AE00BEBAD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21A30DC22A1E23AE00BEBAD6 /* FlowerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21A30DC12A1E23AE00BEBAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A30E7E2A1E240C00BEBAD6 /* LICENSE.txt in Resources */,
+				21A30DCE2A1E23AE00BEBAD6 /* Preview Assets.xcassets in Resources */,
+				21A30E7D2A1E240C00BEBAD6 /* README.rst in Resources */,
+				21A30DCB2A1E23AE00BEBAD6 /* Assets.xcassets in Resources */,
+				21A30E892A1E240C00BEBAD6 /* MNIST_test.csv.lzfse in Resources */,
+				21A30E882A1E240C00BEBAD6 /* MNIST_train.csv.lzfse in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21A30DBF2A1E23AE00BEBAD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A30E942A1E2F3C00BEBAD6 /* AppLogic.swift in Sources */,
+				21A30E612A1E240C00BEBAD6 /* Imputer.pb.swift in Sources */,
+				21A30E432A1E240C00BEBAD6 /* MLMultiArray+Image.swift in Sources */,
+				21A30E6D2A1E240C00BEBAD6 /* TextClassifier.pb.swift in Sources */,
+				21A30E5A2A1E240C00BEBAD6 /* FeatureVectorizer.pb.swift in Sources */,
+				21A30E6E2A1E240C00BEBAD6 /* ArrayFeatureExtractor.pb.swift in Sources */,
+				21A30DDA2A1E23E100BEBAD6 /* DataLoader.swift in Sources */,
+				21A30E7B2A1E240C00BEBAD6 /* Parameters.pb.swift in Sources */,
+				21A30E452A1E240C00BEBAD6 /* CVPixelBuffer+Rotate.swift in Sources */,
+				21A30E442A1E240C00BEBAD6 /* CVPixelBuffer+Resize.swift in Sources */,
+				21A30E352A1E240C00BEBAD6 /* Array+Extensions.swift in Sources */,
+				21A30E782A1E240C00BEBAD6 /* DictVectorizer.pb.swift in Sources */,
+				21A30E682A1E240C00BEBAD6 /* GLMClassifier.pb.swift in Sources */,
+				21A30E4A2A1E240C00BEBAD6 /* Normalizer.pb.swift in Sources */,
+				21A30DC92A1E23AE00BEBAD6 /* MainView.swift in Sources */,
+				21A30E572A1E240C00BEBAD6 /* GLMRegressor.pb.swift in Sources */,
+				21A30E3C2A1E240C00BEBAD6 /* MLMultiArray+Helpers.swift in Sources */,
+				21A30E512A1E240C00BEBAD6 /* MIL.pb.swift in Sources */,
+				21A30E3A2A1E240C00BEBAD6 /* CGImagePropertyOrientation.swift in Sources */,
+				21A30E362A1E240C00BEBAD6 /* Math.swift in Sources */,
+				21A30E382A1E240C00BEBAD6 /* Predictions.swift in Sources */,
+				21A30E3E2A1E240C00BEBAD6 /* CoreML+Combine.swift in Sources */,
+				21A30E3B2A1E240C00BEBAD6 /* UIImage+RawBytes.swift in Sources */,
+				21A30E842A1E240C00BEBAD6 /* DataStructures.pb.swift in Sources */,
+				21A30E6A2A1E240C00BEBAD6 /* TreeEnsemble.pb.swift in Sources */,
+				21A30E5E2A1E240C00BEBAD6 /* SVM.pb.swift in Sources */,
+				21A30E602A1E240C00BEBAD6 /* AudioFeaturePrint.pb.swift in Sources */,
+				21A30E532A1E240C00BEBAD6 /* Gazetteer.pb.swift in Sources */,
+				21A30E632A1E240C00BEBAD6 /* Identity.pb.swift in Sources */,
+				21A30E5D2A1E240C00BEBAD6 /* NonMaximumSuppression.pb.swift in Sources */,
+				21A30E542A1E240C00BEBAD6 /* VisionFeaturePrint.pb.swift in Sources */,
+				21A30E792A1E240C00BEBAD6 /* CategoricalMapping.pb.swift in Sources */,
+				21A30E692A1E240C00BEBAD6 /* ItemSimilarityRecommender.pb.swift in Sources */,
+				21A30E652A1E240C00BEBAD6 /* LinkedModel.pb.swift in Sources */,
+				21A30E872A1E240C00BEBAD6 /* Scaler.pb.swift in Sources */,
+				21A30E852A1E240C00BEBAD6 /* Model.pb.swift in Sources */,
+				21A30E772A1E240C00BEBAD6 /* CustomModel.pb.swift in Sources */,
+				21A30E422A1E240C00BEBAD6 /* CGImage+RawBytes.swift in Sources */,
+				21A30E3F2A1E240C00BEBAD6 /* CVPixelBuffer+Create.swift in Sources */,
+				21A30DC72A1E23AE00BEBAD6 /* FlowerIOSApp.swift in Sources */,
+				21A30E582A1E240C00BEBAD6 /* NearestNeighbors.pb.swift in Sources */,
+				21A30E482A1E240C00BEBAD6 /* FeatureTypes.pb.swift in Sources */,
+				21A30E402A1E240C00BEBAD6 /* CGImage+CVPixelBuffer.swift in Sources */,
+				21A30E4D2A1E240C00BEBAD6 /* SoundAnalysisPreprocessing.pb.swift in Sources */,
+				21A30E462A1E240C00BEBAD6 /* WordTagger.pb.swift in Sources */,
+				21A30E5B2A1E240C00BEBAD6 /* OneHotEncoder.pb.swift in Sources */,
+				21A30E862A1E240C00BEBAD6 /* NeuralNetwork.pb.swift in Sources */,
+				21A30E3D2A1E240C00BEBAD6 /* MLModel+Images.swift in Sources */,
+				21A30E7F2A1E240C00BEBAD6 /* WordEmbedding.pb.swift in Sources */,
+				21A30E392A1E240C00BEBAD6 /* UIImage+Extensions.swift in Sources */,
+				21A30DD92A1E23E100BEBAD6 /* MLModelInspect.swift in Sources */,
+				21A30E742A1E240C00BEBAD6 /* BayesianProbitRegressor.pb.swift in Sources */,
+				21A30E412A1E240C00BEBAD6 /* NonMaxSuppression.swift in Sources */,
+				21A30E372A1E240C00BEBAD6 /* UIImage+CVPixelBuffer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21A30DCF2A1E23AE00BEBAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21A30DD02A1E23AE00BEBAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21A30DD22A1E23AE00BEBAD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlowerIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 675G8K7K5D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flower.FlowerIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21A30DD32A1E23AE00BEBAD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlowerIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 675G8K7K5D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = flower.FlowerIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21A30DBE2A1E23AE00BEBAD6 /* Build configuration list for PBXProject "FlowerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21A30DCF2A1E23AE00BEBAD6 /* Debug */,
+				21A30DD02A1E23AE00BEBAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21A30DD12A1E23AE00BEBAD6 /* Build configuration list for PBXNativeTarget "FlowerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21A30DD22A1E23AE00BEBAD6 /* Debug */,
+				21A30DD32A1E23AE00BEBAD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21A30E8C2A1E24EF00BEBAD6 /* XCRemoteSwiftPackageReference "flower-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adap/flower-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21A30E8D2A1E24EF00BEBAD6 /* flwr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21A30E8C2A1E24EF00BEBAD6 /* XCRemoteSwiftPackageReference "flower-swift" */;
+			productName = flwr;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 21A30DBB2A1E23AE00BEBAD6 /* Project object */;
+}
