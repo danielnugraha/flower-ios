@@ -16,29 +16,45 @@ public class AppLogic: ObservableObject {
     
     public func startFlowerClient() {
         taskStatus = .preparing(info: "Preparing flower client")
+        
+        // spawn new thread to not block the UI thread
         DispatchQueue.global(qos: .default).async {
+            
+            // prepare train dataset
             let trainBatchProvider = DataLoader.trainBatchProvider() { count in
                 DispatchQueue.main.async {
                     self.taskStatus = .preparing(info: "Preparing train dataset: \(count)")
                 }
             }
+            
+            // prepare test dataset
             let testBatchProvider = DataLoader.testBatchProvider() { count in
                 DispatchQueue.main.async {
                     self.taskStatus = .preparing(info: "Preparing test dataset: \(count)")
                 }
             }
+            
+            // load them together
             let dataLoader = MLDataLoader(trainBatchProvider: trainBatchProvider, testBatchProvider: testBatchProvider)
             
+            // getting the mlmodel from the resource
             if let url = Bundle.main.url(forResource: "MNIST_Model", withExtension: "mlmodel") {
                 do {
-                    print(url)
+                    // compile mlmodel
                     let compiledModelUrl = try MLModel.compileModel(at: url)
-                    print(compiledModelUrl)
+                    
+                    // inspect the model to be able to access the model parameters
+                    // to access the model we need to know the layer name
+                    // since the model parameters are stored as key value pairs
                     let modelInspect = try MLModelInspect(serializedData: Data(contentsOf: url))
                     let layerWrappers = modelInspect.getLayerWrappers()
+                    
+                    // instantiate the flower client with CoreML
                     let mlFlwrClient = MLFlwrClient(layerWrappers: layerWrappers,
                                                     dataLoader: dataLoader,
                                                     compiledModelUrl: compiledModelUrl)
+                    
+                    // instantiate grpc client and start federated learning
                     let flwrGRPC = FlwrGRPC(serverHost: self.hostname, serverPort: self.port)
                     DispatchQueue.main.async {
                         self.taskStatus = .ongoing(info: "Federated learning started")
