@@ -40,7 +40,7 @@ struct MainView: View {
                         Button(action: {
                             appLogic.startFlowerClient()
                         }) {
-                            Text("Start Federated Learning")
+                            Text(appLogic.taskStatus.description)
                         }
                     }
                 }
